@@ -10,15 +10,20 @@ import Foundation
 import UIKit
 
 class signUp2 : UIViewController {
-    @IBOutlet weak var txtEmail: UITextField!
-    @IBOutlet weak var txtVerificationCode: UITextField!
-    
-    @IBAction func btnRemail(_ sender: UIButton) {
-        
-    }
+    @IBOutlet weak var txtName: UITextField!
+    @IBOutlet weak var txtGender: UITextField!
+    @IBOutlet weak var txtBirthday: UITextField!
+    @IBOutlet weak var txtAdCity: UITextField!
+  
+    var account : String = ""
+    var password: String = ""
     
     @IBAction func btnNextStep(_ sender: UIButton) {
+        performSegue(withIdentifier: "finish", sender: nil)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let controller = segue.destination as! finish
+    }
 }
 

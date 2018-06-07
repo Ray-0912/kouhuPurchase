@@ -9,17 +9,11 @@
 import Foundation
 import UIKit
 
-class signUp7 : UIViewController {
+class finish : UIViewController {
     @IBAction func btnNavigationBack(_ sender: UIButton) {
         let myStoryBoard = UIStoryboard(name: "Main", bundle: nil)
         let whiteViewController = myStoryBoard.instantiateViewController(withIdentifier: "Main")
         present(whiteViewController, animated:true, completion:nil)
-    }
-    
-    @IBAction func btnLogin(_ sender: UIButton) {
-    }
-    
-    @IBAction func btnSignUp(_ sender: UIButton) {
     }
     
     @IBAction func btnBack(_ sender: UIButton) {

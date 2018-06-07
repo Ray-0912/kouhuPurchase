@@ -10,6 +10,7 @@ target 'kouhuPurchase' do
   pod "ImageSlideshow/Alamofire"
   pod "ReachabilitySwift"
   pod 'FacebookLogin'
+  pod 'PKHUD', '~> 5.0'
 
   target 'kouhuPurchaseTests' do
     inherit! :search_paths

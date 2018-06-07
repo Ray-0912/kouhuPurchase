@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wpp-dK-T11">
-    <device id="retina5_9" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wpp-dK-T11">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,29 +15,29 @@
             <objects>
                 <viewController id="wpp-dK-T11" customClass="login" customModule="kouhuPurchase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5hF-im-9SR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2YN-ei-k8j">
-                                <rect key="frame" x="12" y="56" width="351" height="710"/>
+                                <rect key="frame" x="12" y="32" width="390" height="692"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginLogo" translatesAutoresizingMaskIntoConstraints="NO" id="uJF-wI-anE">
-                                        <rect key="frame" x="21" y="153" width="309" height="154"/>
+                                        <rect key="frame" x="21" y="135" width="348" height="154"/>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="請輸入EMAIL帳號或手機登入" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lwl-Dj-8fe">
-                                        <rect key="frame" x="15" y="336" width="321" height="30"/>
+                                        <rect key="frame" x="15" y="318" width="360" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="請輸入密碼" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cvd-Sm-abm">
-                                        <rect key="frame" x="15" y="381" width="321" height="30"/>
+                                        <rect key="frame" x="15" y="363" width="360" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bxA-zf-nkW">
-                                        <rect key="frame" x="264" y="434" width="72" height="26"/>
+                                        <rect key="frame" x="303" y="416" width="72" height="26"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="忘記密碼？">
@@ -50,7 +50,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4K3-b2-Q21">
-                                        <rect key="frame" x="15" y="461" width="321" height="40"/>
+                                        <rect key="frame" x="15" y="443" width="360" height="40"/>
                                         <color key="backgroundColor" red="1" green="0.94901960784313721" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="fVf-Dg-2dz"/>
@@ -73,7 +73,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pw8-eG-DfT">
-                                        <rect key="frame" x="15" y="513" width="321" height="40"/>
+                                        <rect key="frame" x="15" y="495" width="360" height="40"/>
                                         <color key="backgroundColor" red="1" green="0.69019607843137254" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
@@ -93,7 +93,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n8G-lo-6cU">
-                                        <rect key="frame" x="15" y="568" width="321" height="40"/>
+                                        <rect key="frame" x="15" y="550" width="360" height="40"/>
                                         <color key="backgroundColor" red="1" green="0.47058823529411764" blue="0.0078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="VIc-MY-B2L"/>
@@ -115,7 +115,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shv-0N-82B">
-                                        <rect key="frame" x="132" y="624" width="87" height="23"/>
+                                        <rect key="frame" x="132" y="606" width="126" height="23"/>
                                         <attributedString key="attributedText">
                                             <fragment content="其他登入方式">
                                                 <attributes>
@@ -128,7 +128,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1K-dU-2gM">
-                                        <rect key="frame" x="145" y="650" width="60" height="60"/>
+                                        <rect key="frame" x="145" y="632" width="99" height="60"/>
                                         <state key="normal" image="facebookIcon"/>
                                         <connections>
                                             <action selector="facebookLogin:" destination="wpp-dK-T11" eventType="touchUpInside" id="E4v-Zj-GBm"/>

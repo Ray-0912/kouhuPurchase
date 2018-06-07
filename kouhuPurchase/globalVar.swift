@@ -32,9 +32,7 @@ struct token : Codable {
 
 struct globalVar {
     static var URL = "https://test.kouhu.com.tw/api/v1.0/"
-//    static var URL = "http://test.kouhu.com.tw:8069/api/v1.0/"
     static var imageURL = "https://test.kouhu.com.tw/web/image/product.template/"
-//    static var imageURL = "http://test.kouhu.com.tw:8069/web/image/product.template/"
     static var categImage = "https://test.kouhu.com.tw/web/image/product.public.category/"
     static var DB  = "test.kouhu.com.tw"
     static let account     = "admin"

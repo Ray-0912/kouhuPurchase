@@ -26,12 +26,14 @@ PODS:
     - AlamofireImage (~> 3.0)
     - ImageSlideshow/Core
   - ImageSlideshow/Core (1.5.1)
+  - PKHUD (5.0.0)
   - ReachabilitySwift (4.1.0)
 
 DEPENDENCIES:
   - FacebookLogin
   - ImageSlideshow
   - ImageSlideshow/Alamofire
+  - PKHUD (~> 5.0)
   - ReachabilitySwift
 
 SPEC CHECKSUMS:
@@ -43,8 +45,9 @@ SPEC CHECKSUMS:
   FBSDKCoreKit: e08ccfcefa7bc1347a07c276dac9bf6c7fe57024
   FBSDKLoginKit: 99797ac39252fef6f72600b886f6ee60b4b29cab
   ImageSlideshow: ae3de479b8c70dc751142d21573f5a28dbb97d4d
+  PKHUD: 3c001512c6e002091184197a8de7a20420786e3b
   ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
 
-PODFILE CHECKSUM: 986179738785a406da157f2312f141eb18302988
+PODFILE CHECKSUM: b5da1221ebbac93427d2d15ef19fbfe9613454af
 
 COCOAPODS: 1.4.0

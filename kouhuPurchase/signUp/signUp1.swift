@@ -27,7 +27,7 @@ class signUp1 : UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let controller = segue.destination as! signUp4
+        let controller = segue.destination as! signUp2
         controller.account  = txtAccunt.text!
         controller.password = txtPassword.text!
     }

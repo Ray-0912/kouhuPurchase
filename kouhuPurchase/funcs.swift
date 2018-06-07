@@ -92,6 +92,11 @@ class libs {
         }
     }
     
+}
+
+
+// work for CoreData ShoppingCart
+extension libs {
     func getShoppingCartIds() -> [Int] {
         var shoppingCartIds : [Int] = [0]
         
@@ -136,6 +141,61 @@ class libs {
                 let cartProduct = item as? ShoppingCart
                 if cartProduct?.id == id {
                     context.delete(cartProduct!)
+                    appDel?.saveContext()
+                }
+            }
+        } catch {
+            
+        }
+    }
+}
+
+//work for CoreData Collection
+extension libs {
+    func getCollectionIds() -> [Int] {
+        var collectionIds : [Int] = [0]
+        
+        do {
+            let appDel = UIApplication.shared.delegate as? AppDelegate
+            guard let context = appDel?.persistentContainer.viewContext else { return [] }
+            let result = try context.fetch(ShoppingCart.fetchRequest())
+            
+            for item in result {
+                let collection = item as? Collection
+                collectionIds.append(Int((collection?.id)!))
+            }
+        } catch {}
+        
+        return collectionIds
+    }
+    
+    func addToCollection(id:Int32, categ: Int32, name: String, price: Double) {
+        do {
+            let appDel = UIApplication.shared.delegate as? AppDelegate
+            guard let context = appDel?.persistentContainer.viewContext else { return }
+            let collectionProduct = Collection(context: context)
+            
+            collectionProduct.id = id
+            collectionProduct.public_categ_ids = categ
+            collectionProduct.name = name
+            collectionProduct.list_price = price
+            
+            appDel?.saveContext()
+        } catch {
+            
+        }
+    }
+    
+    func delFromCollection(id: Int32) {
+        do {
+            let appDel = UIApplication.shared.delegate as? AppDelegate
+            guard let context = appDel?.persistentContainer.viewContext else { return }
+            let result = try context.fetch(Collection.fetchRequest())
+            
+            for item in result {
+                let collectionProduct = item as? Collection
+                if collectionProduct?.id == id {
+                    context.delete(collectionProduct!)
                     appDel?.saveContext()
                 }
             }
