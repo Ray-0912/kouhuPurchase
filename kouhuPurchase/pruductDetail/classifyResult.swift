@@ -76,7 +76,8 @@ class classifyResult : UIViewController, UICollectionViewDelegate, UICollectionV
             let controller = segue.destination as! productDetail
             
             controller.name       = result?.result[segueToDetail].name
-            controller.id         = result?.result[segueToDetail].id
+            controller.id         = Int32((result?.result[segueToDetail].id)!)
+            controller.categ      = Int32((result?.result[segueToDetail].public_categ_ids[0])!)
             controller.list_price = result?.result[segueToDetail].list_price
         }
     }

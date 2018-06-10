@@ -311,6 +311,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXC-Re-g65">
                                 <rect key="frame" x="278" y="509" width="64" height="64"/>
                                 <state key="normal" image="addToCollection"/>
+                                <connections>
+                                    <action selector="addToCollection:" destination="vpc-gj-MRa" eventType="touchUpInside" id="S5v-tI-P7M"/>
+                                </connections>
                             </button>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUQ-34-0gs">
                                 <rect key="frame" x="32" y="316" width="310" height="185"/>

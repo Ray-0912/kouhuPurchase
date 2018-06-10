@@ -11,9 +11,11 @@ import UIKit
 
 class productDetail: UIViewController {
     
+    var id          : Int32?
     var name        : String?
-    var id          : Int?
+    var categ       : Int32?
     var list_price  : Double?
+    var callMethods = libs()
     
     @IBOutlet weak var detailImage: UIImageView!
     
@@ -29,6 +31,10 @@ class productDetail: UIViewController {
     }
     
     @IBAction func addToCart(_ sender: UIButton) {
+        callMethods.addToShoppingCart(id: self.id!, categ: self.categ!, name: self.name!, price: self.list_price!)
     }
     
+    @IBAction func addToCollection(_ sender: UIButton) {
+        callMethods.addToCollection(id: self.id!, categ: self.categ!, name: self.name!, price: self.list_price!)
+    }
 }
